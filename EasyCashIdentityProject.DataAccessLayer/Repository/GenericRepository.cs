@@ -24,6 +24,11 @@ namespace EasyCashIdentityProject.DataAccessLayer.Repository
             return context.Set<T>().Find(t);
         }
 
+        public T GetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<T> GetList()
         {
             using var context = new Context();
