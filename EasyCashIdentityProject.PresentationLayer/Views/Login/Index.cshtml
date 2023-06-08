@@ -1,6 +1,6 @@
-﻿@model AppUserRegisterDto
+﻿@model LoginViewModel
 @{
-    Layout = null;
+	Layout = null;
 }
 
 
@@ -12,7 +12,7 @@
 <!-- Head -->
 <head>
 
-	<title>Existing Login Form a Flat Responsive Widget Template :: W3layouts</title>
+	<title>Easy Cash Identity-Giriş Sayfası</title>
 
 	<!-- Meta-Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,29 +35,28 @@
 <!-- Body -->
 <body>
 
-	<h1>Easy Cash Kayıt Formu</h1>
+	<h1>Easy Cash Giriş Formu</h1>
 
 	<div class="w3layoutscontaineragileits">
-		<h2>Yeni Müşteri</h2>
-		<form  method="post">
-			<input type="text" asp-for="Name" placeholder="Adınızı Girin" required="">
-			<input type="text" asp-for="SurName" placeholder="SoyAdınızı Girin" required="">
+		<h2>Easy Cash</h2>
+		<form method="post">
+			
 			<input type="text" asp-for="UserName" placeholder="Kullanıcı Adınızı Girin" required="">
-			<input type="email" asp-for="Email" placeholder="Email Adresinizi Girin" required="">
+			
 			<input type="password" asp-for="Password" placeholder="Şifreniz" required="">
-			<input type="password" asp-for="ConfirmPassword" placeholder="Şifreniz Tekrar Girin" 
-			required="">
-			<div class="text-white" asp-validation-summary="ModelOnly"></div>
+			
+	
+			
 			<ul class="agileinfotickwthree">
 				<li>
 					<input type="checkbox" id="brand1" value="">
-					<label for="brand1"><span></span>Kullanım Şartları Okudum</label>
-					<a href="/Login/Index/">Bir Hesabınız varmı?</a>
+					<label for="brand1"><span></span>Beni Hatırla</label>
+					<a href="/Login/Index/">Bir Hesabınız yokmu?</a>
 				</li>
 			</ul>
 			<div class="aitssendbuttonw3ls">
-				<input type="submit" value="Giriş Yap">
-				<p> Ana Sayfaya Dön  <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Click Here</a></p>
+				<input type="submit" value="LOGIN">
+				<p> To register new account <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Click Here</a></p>
 				<div class="clear"></div>
 			</div>
 		</form>
@@ -136,3 +135,4 @@
 <!-- //Body -->
 
 </html>
+
